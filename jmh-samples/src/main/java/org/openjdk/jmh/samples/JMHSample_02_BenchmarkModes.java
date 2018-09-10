@@ -174,6 +174,7 @@ public class JMHSample_02_BenchmarkModes {
                 .include(JMHSample_02_BenchmarkModes.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(5)
+                .jvmArgs("-ea")
                 .forks(1)
                 .build();
 

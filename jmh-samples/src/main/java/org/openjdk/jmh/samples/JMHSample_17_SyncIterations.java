@@ -119,7 +119,8 @@ public class JMHSample_17_SyncIterations {
                 .measurementIterations(20)
                 .threads(Runtime.getRuntime().availableProcessors()*16)
                 .forks(1)
-                .syncIterations(true) // try to switch to "false"
+                .jvmArgs("-ea")
+                .syncIterations(false) // try to switch to "false"
                 .build();
 
         new Runner(opt).run();

@@ -39,4 +39,14 @@
       <module name="jmh-scala-benchmark-archetype" target="1.5" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jmh-core" options="-proc:none" />
+      <module name="jmh-core-ct" options="-proc:none" />
+      <module name="jmh-generator-annprocess" options="-proc:none" />
+      <module name="jmh-generator-asm" options="-proc:none" />
+      <module name="jmh-generator-bytecode" options="-proc:none" />
+      <module name="jmh-generator-reflection" options="-proc:none" />
+    </option>
+  </component>
 </project>

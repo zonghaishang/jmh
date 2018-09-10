@@ -151,6 +151,7 @@ public class JMHSample_11_Loops {
                 .include(JMHSample_11_Loops.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(5)
+                .jvmArgs("-ea")
                 .forks(1)
                 .build();
 

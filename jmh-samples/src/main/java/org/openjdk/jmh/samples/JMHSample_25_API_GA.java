@@ -100,6 +100,7 @@ public class JMHSample_25_API_GA {
                 .measurementIterations(5)
                 .forks(1)
                 .verbosity(VerboseMode.SILENT)
+                .jvmArgs("-ea")
                 .build();
 
         // Initial population

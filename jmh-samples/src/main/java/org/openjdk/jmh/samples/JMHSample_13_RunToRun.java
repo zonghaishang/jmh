@@ -121,6 +121,7 @@ public class JMHSample_13_RunToRun {
                 .include(JMHSample_13_RunToRun.class.getSimpleName())
                 .warmupIterations(0)
                 .measurementIterations(5)
+                .jvmArgs("-ea")
                 .build();
 
         new Runner(opt).run();

@@ -120,6 +120,7 @@ public class JMHSample_15_Asymmetric {
                 .include(JMHSample_15_Asymmetric.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(5)
+                .jvmArgs("-ea")
                 .forks(1)
                 .build();
 
