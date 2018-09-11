@@ -242,6 +242,7 @@ public class JMHSample_22_FalseSharing {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_22_FalseSharing.class.getSimpleName())
                 .threads(Runtime.getRuntime().availableProcessors())
+                .jvmArgs("-ea")
                 .build();
 
         new Runner(opt).run();

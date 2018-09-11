@@ -141,6 +141,7 @@ public class JMHSample_21_ConsumeCPU {
                 .warmupIterations(1)
                 .measurementIterations(5)
                 .forks(1)
+                .jvmArgs("-ea")
                 .build();
 
         new Runner(opt).run();

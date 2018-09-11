@@ -92,6 +92,7 @@ public class JMHSample_20_Annotations {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_20_Annotations.class.getSimpleName())
+                .jvmArgs("-ea")
                 .build();
 
         new Runner(opt).run();

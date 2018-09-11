@@ -97,6 +97,7 @@ public class JMHSample_08_DeadCode {
                 .include(JMHSample_08_DeadCode.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(5)
+                .jvmArgs("-ea")
                 .forks(1)
                 .build();
 

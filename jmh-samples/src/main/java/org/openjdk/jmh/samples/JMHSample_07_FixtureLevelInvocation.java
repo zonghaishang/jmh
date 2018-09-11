@@ -161,6 +161,7 @@ public class JMHSample_07_FixtureLevelInvocation {
                 .include(JMHSample_07_FixtureLevelInvocation.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(5)
+                .jvmArgs("-ea")
                 .forks(1)
                 .build();
 

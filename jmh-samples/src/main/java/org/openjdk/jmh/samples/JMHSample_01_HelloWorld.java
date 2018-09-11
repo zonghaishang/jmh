@@ -95,6 +95,7 @@ public class JMHSample_01_HelloWorld {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_01_HelloWorld.class.getSimpleName())
+                .jvmArgs("-ea")
                 .forks(1)
                 .build();
 

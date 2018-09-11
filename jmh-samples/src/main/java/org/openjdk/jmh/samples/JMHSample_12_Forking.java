@@ -180,6 +180,7 @@ public class JMHSample_12_Forking {
                 .include(JMHSample_12_Forking.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(5)
+                .jvmArgs("-ea")
                 .build();
 
         new Runner(opt).run();
