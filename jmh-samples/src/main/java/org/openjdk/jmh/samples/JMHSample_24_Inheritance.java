@@ -125,6 +125,7 @@ public class JMHSample_24_Inheritance {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_24_Inheritance.class.getSimpleName())
+                .jvmArgs("-ea")
                 .build();
 
         new Runner(opt).run();

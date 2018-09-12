@@ -123,6 +123,7 @@ public class JMHSample_23_AuxCounters {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_23_AuxCounters.class.getSimpleName())
+                .jvmArgs("-ea")
                 .build();
 
         new Runner(opt).run();

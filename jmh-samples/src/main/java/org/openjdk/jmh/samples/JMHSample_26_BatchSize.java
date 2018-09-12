@@ -131,6 +131,7 @@ public class JMHSample_26_BatchSize {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_26_BatchSize.class.getSimpleName())
                 .forks(1)
+                .jvmArgs("-ea")
                 .build();
 
         new Runner(opt).run();
